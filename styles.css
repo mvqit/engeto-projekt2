@@ -1,0 +1,115 @@
+:root {
+  --product-black: #000;
+  --product-white: #fff;
+  --product-red: #ee1212;
+  --product-green: #32840c;
+  --product-light-green: #7fcb5b61;
+  --product-brown: #413e01;
+  --product-yellow: #fffa87;
+  --product-gray: #d9d9d9;
+  --product-light-red: #ee121240;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.product-card {
+  border: 1px solid var(--product-black);
+  width: 450px;
+  position: relative;
+}
+
+h1,
+p,
+.po-box-container,
+.price-container {
+  margin: 1rem;
+}
+
+.po-box-container,
+.price-container {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.label-bestseller,
+.label-product-of-year,
+.label-discount,
+.add-to-cart-button {
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.product-image-container {
+  height: 350px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.label-bestseller {
+  background-color: var(--product-yellow);
+  color: var(--product-brown);
+  border-radius: 0 5px 5px 0;
+  position: absolute;
+  top: 1rem;
+}
+
+.label-product-of-year {
+  background-color: var(--product-red);
+  color: var(--product-white);
+  border-radius: 0 5px 5px 0;
+  position: absolute;
+  top: 4rem;
+}
+
+.label-discount {
+  background-color: var(--product-red);
+  color: var(--product-white);
+  text-align: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.25rem;
+}
+
+.price-container {
+  background-color: var(--product-light-red);
+  position: relative;
+}
+
+.price {
+  font-size: 2rem;
+}
+
+.add-to-cart-button {
+  background-color: var(--product-gray);
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--product-black);
+}
+
+.po-box-container {
+  background-color: var(--product-light-green);
+  color: var(--product-green);
+
+  position: relative;
+}
+
+.po-box-info {
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+}
